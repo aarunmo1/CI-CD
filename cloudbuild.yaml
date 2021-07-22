@@ -14,7 +14,7 @@ steps:
   - '--image'
   - 'gcr.io/$PROJECT_ID/pipeline-demo'
   - '--region'
-  - 'us-central1'
+  - 'asia-south1'
   - '--platform'
   - 'managed'
   - '--allow-unauthenticated'
