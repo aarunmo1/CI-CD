@@ -6,9 +6,10 @@ steps:
 # - name: 'gcr.io/cloud-builders/docker'
 #   args: [ 'push', 'gcr.io/$PROJECT_ID/pipeline-demo']
 
-- name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy"]
-timeout: "1600s"
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: 'bash'
+  args: ['-c', 'gcloud config set app/cloud_build_timeout 1600 && gcloud app deploy']
+timeout: '1600s
 
 # - name: 'gcr.io/cloud-builders/gcloud'
 #   args:
