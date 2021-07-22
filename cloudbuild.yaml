@@ -10,7 +10,7 @@ steps:
   args:
   - 'run'
   - 'deploy'
-  - 'cloudrunservice'
+  - 'cloudservice'
   - '--image'
   - 'gcr.io/$PROJECT_ID/pipeline-demo'
   - '--region'
