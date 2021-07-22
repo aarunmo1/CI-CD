@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-var message = "Hackathon content"
+var message = "Hackathon content here"
 
 app.get('/', (req, res)=>{
     res.send(message)
